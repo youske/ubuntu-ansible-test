@@ -10,3 +10,7 @@ master,targetのマシンが稼働し　master->targetにてansibleを実行す�
 
 # run
     docker-compose up -d
+
+
+# sshkey change
+    $ cat id_rsa | docker run -i <image> sh -c 'cat > /root/.ssh/id_rsa'

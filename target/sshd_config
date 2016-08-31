@@ -1,5 +1,17 @@
+Protocol 2
+LoginGraceTime 120
+PermitRootLogin no
 PermitEmptyPasswords yes
 PasswordAuthentication no
+RSAAuthentication yes
+PubkeyAuthentication yes
+IgnoreRhosts yes
+
+
+ServerKeyBits 2048
 UsePAM no
+
+TCPKeepAlive yes
+
 # need sftp server to run Ansible
 Subsystem sftp /usr/lib/openssh/sftp-server
